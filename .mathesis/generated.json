@@ -1,0 +1,34 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/okada-conjectures-20261103/README.md",
+    "manuscript/okada-conjectures-20261103/checked-results.json",
+    "manuscript/okada-conjectures-20261103/metadata.json",
+    "manuscript/okada-conjectures-20261103/note.tex",
+    "manuscript/okada-conjectures-20261103/verify.py",
+    "paper.json",
+    "paper.pdf"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "04448bfdd62eb7c941426203a3a73f8e7b8589814b7e249ea364d995859f09ef",
+    "CITATION.cff": "d7d2e5f6237a47dca8efe2d2a1c600452d273ca6d1f1ec2b079bd15a8e2706aa",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "bfb6923c88c450a0e56788f1c6e57e4eb87338a7b874289718912a467996d789",
+    "formalization/nodes.json": "179097187a55c0b881c0ba46d016817a5f01d67391cb79310c0b3c71682fa7ac",
+    "manuscript/okada-conjectures-20261103/README.md": "fe14968f0c9e63e2ea1388b6781ebc13e5596add52f240dcc317af96577c3d4c",
+    "manuscript/okada-conjectures-20261103/checked-results.json": "bfc47dde4a45d24d47333e230ef7d312fc2933059bb7abfa92b080682868bb55",
+    "manuscript/okada-conjectures-20261103/metadata.json": "9a2641aabd1b57f1c86585cf6d43fe3d98642ea6510a615ba2b62598d3dd795f",
+    "manuscript/okada-conjectures-20261103/note.tex": "44ede499d2c78f9b82dc1738bc3fc2202e205fc87424c0e4fda2692f096486f7",
+    "manuscript/okada-conjectures-20261103/verify.py": "ab0e1bffc3b34bc8ba29738e500471fe9253e6d24d1686e51c2dddfbb93c44af",
+    "paper.json": "20d60a104fdfb07054ec58a31e0d30d9a71eb3447cc39ab2d6d79d11251d8da2",
+    "paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e"
+  },
+  "snapshot_identity": "cf7dddc7adeedae37e3b7aa89874f0211d88d227e9e87e76ca70c780fd1b9b3d"
+}

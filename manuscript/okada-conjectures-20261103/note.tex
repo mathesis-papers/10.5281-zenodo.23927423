@@ -1,0 +1,481 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\qbin}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}_{q}}
+\newcommand{\coeff}[2]{[q^{#1}]#2}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Proofs of Okada's Conjectures 9.63 and 9.64\\with constant-base-shift extensions\\[3pt]
+\large arXiv:2003.02112v2, Section 9.8.3}
+\author{Haobo Ma$^{1}$ \qquad Wenlin Zhang$^{2,1}$\\[4pt]
+\small $^{1}$ChronoAI Pte Ltd, Singapore\\
+\small $^{2}$National University of Singapore}
+\date{November 3, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove Conjectures 9.63 and 9.64 in
+Section 9.8.3 of Okada's arXiv:2003.02112v2: every almost strictly pre-fitting, unit-weight,
+unit-base-shift pre-merged Gaussian determinant of width at least three
+and degree shift zero fails to be almost palindromic, and the proposed
+width-two proportions are strictly increasing from index three onward.
+The second nonzero coefficient exceeds the penultimate nonzero coefficient
+by one. At width two, almost palindromicity holds exactly when one of the
+two tuple gaps equals one. This classification gives the exact proportion
+$O(\lambda)=(\lambda-2)(\lambda-3)/(\lambda(\lambda+1))$ for $\lambda\ge2$.
+These conclusions extend to every constant positive integral base shift
+at degree shift zero. The proposed base-shift invariance at nonzero degree
+shift can fail at width two, as in Okada's Example 9.65; an infinite
+family extends that example. We prove invariant slices of Conjecture 9.66,
+whose width is at least three.
+\end{abstract}
+
+\section{The conjectures and the coefficient comparison}
+
+Okada's Conjecture 9.63 concerns the symmetry remaining after zero
+coefficients are removed from a pre-merged determinant. We prove it by
+comparing four coefficients, and obtain a width-two classification that
+also proves the neighboring Conjecture 9.64. Throughout, conjecture and
+definition numbers refer to the January 2024 version~\cite{okada}.
+We also extend Example 9.65 to an infinite family and prove
+base-shift invariance on several slices of Conjecture 9.66. These numbered
+statements belong to v2; the author's November 2, 2026 manuscript~\cite{okada-current}
+reorganizes the conjectures and does not repeat these three statements.
+
+For $0\le k\le n$, write
+\[
+ Q_n(q)=\prod_{j=1}^{n}(1-q^j),\qquad
+ \qbin{n}{k}=\frac{Q_n}{Q_kQ_{n-k}}\in\mathbb Z[q],\qquad Q_0=1.
+\]
+These are the standard Gaussian polynomials; see, for example,
+Stanley~\cite[p.~501, equations (2)--(3)]{stanley}.
+For natural tuples satisfying
+\begin{equation}\label{fitting}
+ 0\le a_1<\cdots<a_\mu\le b_1<\cdots<b_\mu,
+\end{equation}
+put
+\begin{equation}\label{products}
+ A(q)=\prod_{i=1}^{\mu}\qbin{b_i}{a_i},\qquad
+ B(q)=\prod_{i=1}^{\mu}\qbin{b_i}{a_{\mu+1-i}},\qquad P(q)=A(q)-B(q).
+\end{equation}
+Condition~\eqref{fitting} is exactly ``almost strictly pre-fitting'' in
+\cite[Definition 9.48(2)]{okada}. At weights and base shifts all equal to
+one, the base-shift factors in \cite[Definition 9.4]{okada} are one.
+Its degree-shift-zero determinant is therefore precisely~\eqref{products}.
+Following \cite[Definition 9.52]{okada}, a nonzero polynomial is
+\emph{almost palindromic} when its nonzero coefficients, in increasing
+degree, form a palindrome.
+
+\begin{theorem}\label{main}
+Assume~\eqref{fitting} and $\mu\ge3$. Define
+\[
+ t=b_1-a_\mu,\qquad
+ c=\begin{cases}\mu,&a_1>0,\\ \mu-1,&a_1=0,\end{cases}
+ \qquad d=\sum_{i=1}^{\mu}a_i(b_i-a_i).
+\]
+Then $\deg P=d$, $d\ge t+4$, and
+\begin{equation}\label{endpoints}
+ \coeff{j}{P}=0\ (j<t+1),\quad
+ \coeff{t+1}{P}=1,\quad \coeff{t+2}{P}=c+1,\quad
+ \coeff{d-1}{P}=c,\quad \coeff{d}{P}=1.
+\end{equation}
+In particular, $P$ is not almost palindromic, proving Conjecture 9.63.
+The same conclusions hold at width two if
+$a_2-a_1\ge2$ and $b_2-b_1\ge2$.
+\end{theorem}
+
+\begin{proof}
+We prove both regimes together. For $n\ge1$, Gaussian polynomials satisfy
+\[
+ \qbin{n}{k}=\qbin{n-1}{k}+q^{n-k}\qbin{n-1}{k-1},
+ \qquad \qbin{n}{0}=\qbin{n}{n}=1,
+\]
+with terms outside $0\le k\le n$ equal to zero. Thus they are integer
+polynomials. Their factorial formula gives constant coefficient one and
+\[
+ \left.\qbin{n}{k}\right|_{q\mapsto q^{-1}}=q^{-k(n-k)}\qbin{n}{k}.
+\]
+Here the left side means evaluation of the same Gaussian polynomial at
+$q^{-1}$. Consequently it is monic of degree $k(n-k)$.
+If $0<k<n$, then $Q_n\equiv1-q\pmod{q^2}$ and
+$Q_kQ_{n-k}\equiv1-2q\pmod{q^2}$, so its linear coefficient is one.
+At $k=0$ or $k=n$ that coefficient is zero.
+
+First compare the low degrees. For $\mu\ge3$, strict increase implies
+\begin{align*}
+ b_i-a_i&=t+(b_i-b_1)+(a_\mu-a_i)\ge t+\mu-1\ge t+2,\\
+ b_1-a_\mu&=t,\\
+ b_i-a_{\mu+1-i}&\ge t+2(i-1)\ge t+2\qquad(i\ge2).
+\end{align*}
+At width two with gaps $x=a_2-a_1\ge2$ and $y=b_2-b_1\ge2$,
+the direct differences are $t+x,t+y$ and the reversed ones are $t,t+x+y$,
+so the same bounds apply.
+
+Every $Q_n$ is a unit in $\mathbb Z[[q]]$. Cancellation of the common
+Gaussian factorials gives
+\[
+ A\prod_i Q_{b_i-a_i}=B\prod_i Q_{b_i-a_{\mu+1-i}}.
+\]
+In $\mathbb Z[[q]]/(q^{t+3})$, all $Q_n$ with $n\ge t+2$ equal
+$Q_{t+2}$. The bounds just established therefore imply
+\[
+ B\equiv A\frac{Q_{t+2}}{Q_t}
+   =A(1-q^{t+1})(1-q^{t+2})\pmod{q^{t+3}}.
+\]
+Since $2t+3\ge t+3$, subtraction yields
+\begin{equation}\label{low}
+ P\equiv A(q^{t+1}+q^{t+2})\pmod{q^{t+3}}.
+\end{equation}
+All direct differences are positive. Exactly $c$ factors of $A$ have
+positive lower index, so $A(0)=1$ and $\coeff{1}{A}=c$.
+Equation~\eqref{low} proves the three low-degree assertions
+in~\eqref{endpoints}.
+
+For the high degrees, set
+$e=\sum_i a_{\mu+1-i}(b_i-a_{\mu+1-i})=\deg B$.
+Pairing reversed indices gives the exact identity
+\begin{equation}\label{gap}
+ d-e=\sum_{i=1}^{\lfloor\mu/2\rfloor}
+       (a_{\mu+1-i}-a_i)(b_{\mu+1-i}-b_i).
+\end{equation}
+Every summand is positive. For $\mu\ge3$, the outermost one is at least
+$(\mu-1)^2\ge4$; in the width-two regime it equals $xy\ge4$.
+Hence $\deg B\le d-4$. Since $A$ is monic and reciprocal of degree $d$,
+its last two coefficients are $c,1$, and $B$ changes neither.
+This proves $\deg P=d$ and the last two assertions of~\eqref{endpoints}.
+
+Finally, in both regimes $a_\mu\ge2$ and
+$b_\mu-a_\mu\ge t+2$. Thus
+$d\ge a_\mu(b_\mu-a_\mu)\ge2(t+2)\ge t+4$.
+The second and penultimate nonzero coefficients occupy the distinct
+degrees $t+2$ and $d-1$. They are $c+1$ and $c$, respectively, and
+$c\ge1$. Removing any zeros between them cannot make the list palindromic.
+\end{proof}
+
+For example, $a=(0,1,2)$ and $b=(2,3,4)$ give
+$P=q+3q^2+4q^3+4q^4+2q^5+q^6$; the second and penultimate coefficients
+are three and two.
+
+\section{Width two and the exact counting formula}
+
+The width-two sentence immediately following Conjecture 9.63 states the
+nonpalindromicity conclusion for two gaps at least two.
+Theorem~\ref{main} proves the stronger conclusion of failure of almost
+palindromicity. The remaining cases have a simple exact description.
+
+\begin{theorem}\label{classification}
+For $0\le a_1<a_2\le b_1<b_2$, the polynomial~\eqref{products} at width
+two is almost palindromic if and only if
+\[
+ \min(a_2-a_1,b_2-b_1)=1.
+\]
+\end{theorem}
+\begin{proof}
+If both gaps are at least two, apply Theorem~\ref{main}.
+Otherwise put $x=a_2-a_1$, $y=b_2-b_1$, $r=b_1-a_2+1$, and
+$h=\max(x,y)$. Direct cancellation gives
+\[
+ \frac BA=
+ \frac{Q_{b_1-a_1}Q_{b_2-a_2}}{Q_{b_1-a_2}Q_{b_2-a_1}}
+ =\frac{1-q^r}{1-q^{r+h}}.
+\]
+For $x=1$, cancel to obtain
+$(1-q^{b_1-a_2+1})/(1-q^{b_2-a_1})$; for $y=1$, the same
+expression follows by canceling the other two adjacent factorials.
+Both denominators have exponent $r+h$. Thus, in $\mathbb Q(q)$,
+\begin{equation}\label{onegap}
+ P=q^r A\frac{1-q^h}{1-q^{r+h}}.
+\end{equation}
+The right side has order $r$ and coefficient one there. Moreover,
+$d-e=xy=h>0$, so $\deg P=d$.
+The rational factor $H(q)=(1-q^h)/(1-q^{r+h})$ satisfies
+$H(q^{-1})=q^rH(q)$. Combining this with reciprocity of $A$ in
+\eqref{onegap} gives
+\[
+ q^{d+r}P(q^{-1})=P(q).
+\]
+The coefficients on the interval $[r,d]$ are therefore symmetric,
+including all zero coefficients. Deleting zeros preserves that symmetry.
+\end{proof}
+
+\begin{corollary}\label{counting}
+Let $M(\lambda)$ and $N(\lambda)$ be the sets in Okada's Conjecture 9.64:
+$M(\lambda)$ consists of all $0\le a_1<a_2\le b_1<b_2=\lambda$, and
+$N(\lambda)$ consists of those tuples whose determinant is not almost
+palindromic. For $\lambda\ge2$,
+\[
+ |M(\lambda)|=\binom{\lambda+1}{3},\quad
+ |N(\lambda)|=\binom{\lambda-1}{3},\quad
+ |M(\lambda)\setminus N(\lambda)|=(\lambda-1)^2,
+\]
+where a binomial coefficient with upper index less than three is zero.
+Consequently
+\begin{equation}\label{ratio}
+ O(\lambda)=\frac{|N(\lambda)|}{|M(\lambda)|}
+           =\frac{(\lambda-2)(\lambda-3)}{\lambda(\lambda+1)}.
+\end{equation}
+In particular, $O(3)=0$, $O(\lambda+1)>O(\lambda)$ for $\lambda\ge3$,
+and $O(\lambda)\longrightarrow1$.
+\end{corollary}
+\begin{proof}
+The bijection
+\[
+ (a_1,a_2,b_1,\lambda)=(u,u+x,u+x+t,u+x+t+y)
+\]
+identifies $M(\lambda)$ with $u,t\ge0$, $x,y\ge1$, and
+$u+t+x+y=\lambda$. Subtracting one from $x$ and $y$ leaves four
+nonnegative integers of sum $\lambda-2$, giving $\binom{\lambda+1}{3}$
+by stars and bars. Theorem~\ref{classification} identifies $N(\lambda)$
+with $x,y\ge2$. Subtracting two instead gives $\binom{\lambda-1}{3}$
+for $\lambda\ge4$, and no tuples for $\lambda=2,3$.
+Subtracting the two counts gives $(\lambda-1)^2$, and division gives
+\eqref{ratio}. Finally,
+\[
+ O(\lambda+1)-O(\lambda)
+ =\frac{6(\lambda-2)}{\lambda(\lambda+1)(\lambda+2)}>0\quad(\lambda\ge3).
+\]
+The limit follows immediately from~\eqref{ratio}.
+The ratio is undefined at $\lambda=0,1$, where $M(\lambda)$ is empty;
+at $\lambda=2$ it equals zero.
+\end{proof}
+
+\begin{corollary}\label{allwidths}
+At fixed $b_\mu=\lambda$ and width $\mu\ge3$, the number of tuples
+in~\eqref{fitting} is $\binom{\lambda+1}{2\mu-1}$, and every one gives
+a determinant that is not almost palindromic. At width two the exceptional
+proportion is $1-O(\lambda)=6(\lambda-1)/(\lambda(\lambda+1))$,
+asymptotic to $6/\lambda$.
+\end{corollary}
+\begin{proof}
+If $a_\mu<b_1$, choose the other $2\mu-1$ distinct entries from
+$\{0,\ldots,\lambda-1\}$. If $a_\mu=b_1$, choose $2\mu-2$ entries
+from that set. Pascal's identity gives the stated sum, and
+Theorem~\ref{main} applies. The last formula follows from~\eqref{ratio}.
+\end{proof}
+
+\section{Constant base shifts and neighboring statements}
+
+The source's base-shift function is
+\[
+ b_{n,\rho}(q)=\frac{Q_n(q^\rho)}{Q_n(q)}
+ =\prod_{j=1}^{n}(1+q^j+\cdots+q^{(\rho-1)j}),\qquad \rho\ge1.
+\]
+In Definition 9.4 at unit weights and constant base shift $\rho$, set
+\begin{align*}
+ A_\rho&=\prod_i\left(\qbin{b_i}{a_i}\bigg|_{q\mapsto q^\rho}
+                b_{b_i-a_i,\rho}(q)\right),\\
+ B_\rho&=\prod_i\left(\qbin{b_i}{a_{\mu+1-i}}\bigg|_{q\mapsto q^\rho}
+                b_{b_i-a_{\mu+1-i},\rho}(q)\right),\qquad
+ P_{\rho,e}=A_\rho-q^eB_\rho.
+\end{align*}
+Thus $A_1=A$, $B_1=B$, and $P_{1,0}=P$; changing $\rho$ is not just
+substituting $q^\rho$ into $P$.
+
+\begin{corollary}\label{flatbase}
+The non-almost-palindromicity conclusion of Theorem~\ref{main}, the
+width-two classification of Theorem~\ref{classification}, and all counts
+above hold for $P_{\rho,0}$ for every integer $\rho\ge1$.
+In the regimes of Theorem~\ref{main}, its first two nonzero coefficients
+are $1,c_\rho+1$ and its last two are $c_\rho,1$, where
+$c_1=c$ and $c_\rho=\mu$ for $\rho\ge2$.
+\end{corollary}
+\begin{proof}
+Cancelling the factorials in each factor gives
+\[
+ \qbin{n}{k}\bigg|_{q\mapsto q^\rho} b_{n-k,\rho}(q)
+ =\frac{Q_n(q^\rho)}{Q_k(q^\rho)Q_{n-k}(q)}.
+\]
+Consequently $B_\rho/A_\rho=B/A$ as rational functions.
+Each factor of $A_\rho$ is a monic reciprocal polynomial, with degree
+\[
+ D_\rho(n,k)=\rho k(n-k)+\frac{\rho-1}{2}(n-k)(n-k+1).
+\]
+Write $d_\rho=\sum_iD_\rho(b_i,a_i)$.
+The difference of the direct and reversed degrees is the same positive
+integer $G=\deg A-\deg B$ in~\eqref{gap}: the Gaussian contributions give
+$\rho G$, while the base-shift contributions give $-(\rho-1)G$.
+If $\rho\ge2$ and $n-k>0$, the Gaussian factor has no linear term
+and $b_{n-k,\rho}$ has linear coefficient one. Thus
+$[q]A_\rho=c_\rho$. The congruence~\eqref{low} and the high-degree
+comparison apply with $A_\rho$ and $d_\rho$; also $d_\rho\ge d$.
+For width two with a unit gap, the rational factor
+in~\eqref{onegap} is unchanged. Reciprocity now yields
+$q^{d_\rho+r}P_{\rho,0}(q^{-1})=P_{\rho,0}(q)$.
+This proves both cases of the classification and hence the counts.
+\end{proof}
+
+\begin{corollary}\label{weighted}
+Assume~\eqref{fitting} with $\mu\ge2$. For every constant base shift $\rho\ge1$ and
+every constant integral weight $w\ge2$, the degree-shift-zero determinant
+$A_\rho^w-B_\rho^w$ is not almost palindromic.
+\end{corollary}
+\begin{proof}
+Put $t=b_1-a_\mu$. The direct differences are at least $t+1$,
+and all reversed differences except the first are at least $t+2$.
+Hence $B_\rho/A_\rho\equiv1-q^{t+1}\pmod{q^{t+2}}$.
+The first nonzero coefficient of $A_\rho^w-B_\rho^w$ is therefore $w$,
+whereas its last is one because its direct degree exceeds its reversed
+degree by $wG>0$.
+\end{proof}
+
+Conjecture 9.66 proposes that almost palindromicity is unchanged when
+the constant base shift increases from $\rho$ to $\rho+1$, for
+\emph{widths at least three} and degree shifts $0\le e\le G$.
+At width two the assertion is false, as Example 9.65 already shows for
+$a=(0,1)$, $b=(1,4)$ and degree shift one. The next corollary extends
+that example; it is not a counterexample to Conjecture 9.66.
+
+\begin{corollary}\label{counterexample}
+For every $n\ge4$, let $a=(0,1)$, $b=(1,n)$ and $e=1$.
+Then $P_{1,1}$ is almost palindromic, whereas $P_{\rho,1}$ is not
+almost palindromic for every $\rho\ge2$.
+\end{corollary}
+\begin{proof}
+Here $G=n-1$, so $e=1$ is admissible, and
+\[
+ P_{1,1}=1+q^2+q^3+\cdots+q^{n-1}.
+\]
+Its nonzero coefficients are all one. For $\rho\ge2$, the linear
+coefficient of $A_\rho$ is two and $B_\rho(0)=1$, so
+$[q]P_{\rho,1}=1$ and $P_{\rho,1}(0)=1$.
+The degree of $qB_\rho$ is $d_\rho-(n-2)\le d_\rho-2$.
+Thus the last two coefficients are $2,1$, by reciprocity of $A_\rho$.
+The second and penultimate nonzero coefficients differ.
+\end{proof}
+
+For the smallest member, $n=4$, direct multiplication gives
+\begin{align*}
+ P_{1,1}&=1+q^2+q^3,\\
+ P_{2,1}&=1+q+2q^2+4q^3+4q^4+5q^5+6q^6+6q^7\\
+         &\hspace{12mm}+5q^8+5q^9+4q^{10}+2q^{11}+2q^{12}+q^{13}.
+\end{align*}
+
+These are precisely the two polynomials in Example 9.65.
+The first is \emph{almost} palindromic: its coefficient list including
+the interior zero is $(1,0,1,1)$, which is not palindromic, whereas
+its nonzero list is $(1,1,1)$. Thus the word ``palindromic'' there
+requires this qualification.
+
+\begin{corollary}\label{shifted}
+Assume~\eqref{fitting} with $\mu\ge2$. For any $\rho\ge1$, put
+$G=\deg A_\rho-\deg B_\rho$.
+Then
+\[
+ q^{d_\rho}P_{\rho,G}(q^{-1})=P_{\rho,0}(q).
+\]
+Hence the zero-shift classification also holds at $e=G$.
+If $\mu\ge3$, the determinants at $e=1$ and $e=G-1$ are not almost
+palindromic for any $\rho\ge1$.
+If $G$ is even, $P_{\rho,G/2}$ is reciprocal, and therefore almost
+palindromic. Multiplication by $q^s$ or substitution $q\mapsto q^k$,
+for integers $s\ge0$, $k\ge1$, preserves almost palindromicity.
+\end{corollary}
+\begin{proof}
+For $0\le e\le G$, reciprocity of $A_\rho$ and $B_\rho$ gives
+$q^{d_\rho}P_{\rho,e}(q^{-1})=P_{\rho,G-e}(q)$.
+For $e=G$ this reverses the full coefficient list, so it also reverses
+the nonzero list. For $e=G/2$ it gives symmetry directly; the constant
+coefficient is one. When $\mu\ge3$, $G\ge4$ and $c_\rho\ge2$.
+At $e=1$ the constant and linear coefficients are $1,c_\rho-1$;
+the last two are $c_\rho,1$, since $\deg(qB_\rho)\le d_\rho-3$.
+Thus the second and penultimate nonzero coefficients differ.
+Reciprocity gives the assertion at $e=G-1$.
+The final two transformations preserve the ordered
+nonzero coefficient list. An overall monomial shift is distinct from
+the degree-shift parameter $e$, which affects the reversed product alone.
+\end{proof}
+
+The sentence before Conjecture 9.64 also anticipates infinitely many
+almost palindromic unimodal polynomials. An explicit family is
+$a=(0,1)$, $b=(m,n)$ with $1\le m<n$:
+\[
+ P_{1,0}=q^m(1+q+\cdots+q^{n-m-1}).
+\]
+This follows by subtracting $\qbin{m}{1}$ from $\qbin{n}{1}$.
+Its nonzero coefficient sequence is constant, so it is palindromic and
+unimodal. No general unimodality assertion is needed for this family.
+
+\section{Coverage and mathematical verification}
+
+The following table records the scope relative to the posing source~\cite{okada}.
+Theorems~\ref{main}--\ref{classification} concern unit weights, unit base
+shifts and degree shift zero; the corollaries state their extended ranges.
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.32\textwidth}p{0.60\textwidth}@{}}
+\toprule
+Source item & Coverage\\
+\midrule
+Conjecture 9.63 & Proved by Theorem~\ref{main}, for every width at least three.\\[3pt]
+Sentence following 9.63 & Proved in the width-two part of Theorem~\ref{main};
+Theorem~\ref{classification} gives both directions.\\[3pt]
+Conjecture 9.64 & Proved by Corollary~\ref{counting}, including the exact counts and limit.\\[3pt]
+Example 9.65 & Prior proof cited and wording corrected: the first
+polynomial is almost palindromic, not palindromic including its interior zero.
+Corollary~\ref{counterexample} extends it to all $n\ge4$, $\rho\ge2$.\\[3pt]
+Conjecture 9.66 & Proved on slices $e=0,1,G-1,G$ and, for even $G$,
+$e=G/2$, by Corollaries~\ref{flatbase} and~\ref{shifted}.
+Other degree shifts are not covered; its hypothesis is $\mu\ge3$.\\[3pt]
+Sentence before 9.64 & Proved for the explicit infinite unimodal family above.\\[3pt]
+Conjectures 9.49, 9.53, 9.55, 9.57, 9.60, 9.62 & Not covered: density,
+log-concavity, and unimodality require information beyond these endpoint coefficients.\\[3pt]
+2026 manuscript, Conjectures 11.2, 11.4, 11.6 & Not covered: these concern
+unimodality and log-concavity, rather than the palindromicity statements of v2.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The pinned Lean source, dated November 2, 2026,
+\href{https://github.com/the-omega-institute/trureturing/blob/0b3d3a2945e69db04f778eb6fea96ee6a8030a45/D5/S3/Combinatorics/GaussianQuotient/OkadaPreMergedNonPalindromic.lean}{\texttt{OkadaPreMergedNonPalindromic.lean}}
+contains the declaration \texttt{result : claim}, which proves the
+width-at-least-three conclusion of Theorem~\ref{main} for all natural
+tuples~\eqref{fitting}. Its definitions \texttt{preMerged} and
+\texttt{IsAlmostPalindromic} are respectively~\eqref{products} and the
+palindrome condition on the ordered nonzero coefficients.
+The lemmas \texttt{low\_end} and \texttt{high\_end} prove the
+endpoint formulas~\eqref{endpoints} at width at least three and $\rho=1$;
+the paired degree-gap identity~\eqref{gap}, width-two classification,
+counting formulas, constant-base-shift and constant-weight results,
+the family extending Example 9.65 and the stated slices of Conjecture 9.66
+have the written proofs above.
+
+The accompanying \texttt{verify.py} performs exact integer-polynomial
+checks: 66 Gaussian polynomials with $0\le k\le n\le10$ are compared
+with subset enumeration; all 1,486 fitting pairs with $3\le\mu\le6$
+and $b_\mu\le10$ satisfy the endpoint formulas; and all 4,845 width-two
+tuples with $b_2\le18$ satisfy Theorem~\ref{classification} and the counts
+in Corollary~\ref{counting}. Additional exact checks cover constant base
+shifts, weights, degree-shift reciprocity and the family extending Example 9.65;
+their explicit finite ranges are recorded in \texttt{checked-results.json}.
+These finite calculations supplement the all-parameter proofs.
+
+\begin{thebibliography}{3}
+\bibitem{okada}
+So Okada, \emph{Merged-log-concavity of rational functions, almost strictly
+unimodal sequences, and phase transitions of ideal boson-fermion gases},
+\href{https://arxiv.org/abs/2003.02112v2}{arXiv:2003.02112v2},
+January 2024, Definitions 9.4, 9.48, 9.52 and Section 9.8.3,
+Conjectures 9.63, 9.64, Example 9.65 and Conjecture 9.66, pp.~96--97.
+
+\bibitem{okada-current}
+So Okada, \emph{Merged-log-concavity of rational functions, almost strictly
+unimodal sequences, and phase transitions of ideal boson and fermion gases},
+\href{https://so-okada.github.io/research_files/phases.pdf}{author-hosted manuscript},
+November 2, 2026, Section 11, pp.~100--101.
+
+\bibitem{stanley}
+Richard P. Stanley, \emph{Log-concave and unimodal sequences in algebra,
+combinatorics, and geometry}, in \emph{Graph Theory and Its Applications:
+East and West}, Annals of the New York Academy of Sciences \textbf{576}
+(1989), 500--535.
+\href{https://doi.org/10.1111/j.1749-6632.1989.tb16434.x}{doi:10.1111/j.1749-6632.1989.tb16434.x}.
+\end{thebibliography}
+
+\medskip
+\noindent\small Licensed under
+\href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+\end{document}

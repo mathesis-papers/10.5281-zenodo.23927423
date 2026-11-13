@@ -1,0 +1,62 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 90098,
+      "matches_public": null,
+      "path": "paper.pdf",
+      "public_sha256": null,
+      "sha256": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e"
+    },
+    "source": {
+      "bytes": 16755,
+      "matches_public": null,
+      "path": "manuscript/",
+      "public_sha256": null,
+      "sha256": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We prove Conjectures 9.63 and 9.64 in Section 9.8.3 of Okada's arXiv:2003.02112v2. At unit weights and degree shift zero, every natural width at least three gives a non-almost-palindromic determinant. At width two, almost palindromicity holds exactly when min(a2-a1,b2-b1)=1, giving proportion (lambda-2)(lambda-3)/(lambda(lambda+1)) at b2=lambda>=2. These conclusions hold for every constant positive integral base shift. An infinite family extends the width-two counterexample in Example 9.65. Conjecture 9.66, whose width is at least three, is proved on degree-shift slices e=0,1,G-1,G and at e=G/2 when G is even, where G is the direct-minus-reversed degree gap. The remaining degree shifts are not covered.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": "10.5281/zenodo.23927423",
+    "current_version": 2,
+    "doi": "10.5281/zenodo.23927424",
+    "lean_source": {
+      "revision": "0b3d3a2945e69db04f778eb6fea96ee6a8030a45",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/0b3d3a2945e69db04f778eb6fea96ee6a8030a45/D5/S3/Combinatorics/GaussianQuotient/OkadaPreMergedNonPalindromic.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "url": "/api/v1/collected-papers/okada-2020-premerged-determinant-nonpalindromic/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-05T08:03:37.974608824Z",
+    "record": "okada-2020-premerged-determinant-nonpalindromic",
+    "repository_name": "6aec38590da450359338390d",
+    "source": {
+      "url": "/api/v1/collected-papers/okada-2020-premerged-determinant-nonpalindromic/files/source?version=2"
+    },
+    "title": "Proofs of Okada's Conjectures 9.63 and 9.64 with constant-base-shift extensions (arXiv:2003.02112v2, Section 9.8.3)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-05T08:03:37.974608824Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "okada-2020-premerged-determinant-nonpalindromic"
+  }
+}
