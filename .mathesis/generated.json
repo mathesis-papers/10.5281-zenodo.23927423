@@ -12,7 +12,8 @@
     "manuscript/okada-conjectures-20261103/note.tex",
     "manuscript/okada-conjectures-20261103/verify.py",
     "paper.json",
-    "paper.pdf"
+    "paper.pdf",
+    "source.archive"
   ],
   "generator_version": "0.1.0",
   "sha256": {
@@ -27,8 +28,9 @@
     "manuscript/okada-conjectures-20261103/metadata.json": "9a2641aabd1b57f1c86585cf6d43fe3d98642ea6510a615ba2b62598d3dd795f",
     "manuscript/okada-conjectures-20261103/note.tex": "44ede499d2c78f9b82dc1738bc3fc2202e205fc87424c0e4fda2692f096486f7",
     "manuscript/okada-conjectures-20261103/verify.py": "ab0e1bffc3b34bc8ba29738e500471fe9253e6d24d1686e51c2dddfbb93c44af",
-    "paper.json": "6c4f1624bb66bb910d57f105c3edf061a9c71c895496add643f00f22ca1972cf",
-    "paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e"
+    "paper.json": "750600ac47719b332e8be56d2be7144e4602bd85b6130e20b2377e7726d3388d",
+    "paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e",
+    "source.archive": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0"
   },
-  "snapshot_identity": "6769145a449927d848468ac7bcb4b79dd3d32d998c12eceb6c4c00e8ab4879b9"
+  "snapshot_identity": "6a4d7a7cb7ef660341c71d538b7ac804023b5bd37b4c012d50c5e6d5010f2fe0"
 }

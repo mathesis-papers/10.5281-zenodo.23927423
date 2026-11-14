@@ -1,7 +1,7 @@
 {
   "git_blobs": {
     ".github/workflows/pages.yml": "7879724db1358178aad7e9bed326a44be44f5a6a",
-    ".mathesis/generated.json": "5ae5257818e2be189dedf57ad6426657396220c3",
+    ".mathesis/generated.json": "432eb070265d65e8e0e3bc323a35af103a1498a9",
     "CHANGELOG.md": "83d850e8aa9f0e1b398ddbd0944c3e2427efb4be",
     "CITATION.cff": "0531626b07057006801d12db36b960c20861a84a",
     "CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -13,12 +13,13 @@
     "manuscript/okada-conjectures-20261103/metadata.json": "068cadcabfd21d43bdd19d2836978f2c27a55ad6",
     "manuscript/okada-conjectures-20261103/note.tex": "409e0ec78143ba9d2f0d0059626206914403835e",
     "manuscript/okada-conjectures-20261103/verify.py": "32961aa668f1d9a85a0f161cd365ca77f2304dad",
-    "paper.json": "73466c26372c7f3a232c315d071bb5521399e9a4",
+    "paper.json": "23e9694a0dc7b8ffa70e7f2151c5c408c0190928",
     "paper.pdf": "547f5844baaa3b1bc7a01cc399045261fa2a9fa7",
     "site/en/index.html": "0ca30e57827fe4ee6935a736203177fe49fd144f",
-    "site/index.html": "15967ae6a000cce68d34e91b568e713363fb363c",
+    "site/index.html": "d6125bd4f17cb016cb6756acc3659d6e771a07a0",
     "site/mathesis-materials.json": "61436dc4a12c7ef5e9ec9f583cf7ba7153844e97",
     "site/zh/index.html": "0efe76dfa4ba1b6600d78dad43be5e3e60bed74f",
+    "source.archive": "cf5520eadacaa882bbf7257fd746e6a4e01da655",
     "versions/v2/.mathesis/generated.json": "9a8718723315a7debabb3ac8b228e1241ee59138",
     "versions/v2/CHANGELOG.md": "83d850e8aa9f0e1b398ddbd0944c3e2427efb4be",
     "versions/v2/CITATION.cff": "0531626b07057006801d12db36b960c20861a84a",
@@ -32,12 +33,13 @@
     "versions/v2/manuscript/okada-conjectures-20261103/note.tex": "409e0ec78143ba9d2f0d0059626206914403835e",
     "versions/v2/manuscript/okada-conjectures-20261103/verify.py": "32961aa668f1d9a85a0f161cd365ca77f2304dad",
     "versions/v2/paper.json": "dc93d3152b9810a9397e7269267efe8bb3e64ffe",
-    "versions/v2/paper.pdf": "547f5844baaa3b1bc7a01cc399045261fa2a9fa7"
+    "versions/v2/paper.pdf": "547f5844baaa3b1bc7a01cc399045261fa2a9fa7",
+    "versions/v2/source.archive": "cf5520eadacaa882bbf7257fd746e6a4e01da655"
   },
   "schema": "mathesis.paper-collection.v1",
   "sha256": {
     ".github/workflows/pages.yml": "f15d983dcb8f324ffdedb50b05f7380e11fda8723d49b5c8f10ef0f414612372",
-    ".mathesis/generated.json": "da9325b834fef05604a675beb6d3f50ab2f74e4f012127f4b41a22ea2f1ee4c2",
+    ".mathesis/generated.json": "bcc4bf995753a9d3bc8d6bc74983bed103f2b818ad65be9b3a187a579f738fd9",
     "CHANGELOG.md": "04448bfdd62eb7c941426203a3a73f8e7b8589814b7e249ea364d995859f09ef",
     "CITATION.cff": "d7d2e5f6237a47dca8efe2d2a1c600452d273ca6d1f1ec2b079bd15a8e2706aa",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
@@ -49,12 +51,13 @@
     "manuscript/okada-conjectures-20261103/metadata.json": "9a2641aabd1b57f1c86585cf6d43fe3d98642ea6510a615ba2b62598d3dd795f",
     "manuscript/okada-conjectures-20261103/note.tex": "44ede499d2c78f9b82dc1738bc3fc2202e205fc87424c0e4fda2692f096486f7",
     "manuscript/okada-conjectures-20261103/verify.py": "ab0e1bffc3b34bc8ba29738e500471fe9253e6d24d1686e51c2dddfbb93c44af",
-    "paper.json": "6c4f1624bb66bb910d57f105c3edf061a9c71c895496add643f00f22ca1972cf",
+    "paper.json": "750600ac47719b332e8be56d2be7144e4602bd85b6130e20b2377e7726d3388d",
     "paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e",
     "site/en/index.html": "6074089b1e60bbe770cd2abf048857df7cb222ec0c1fcae6fb7fb30e6f805b18",
-    "site/index.html": "ca551be3f3d8f32caf3e77c4e36502052945ea085f62a441012d2b06ff403e76",
+    "site/index.html": "32a7c3559256e8a3e81fd2b0a545ffcfff7b24887d942ffa801e46044ac5a519",
     "site/mathesis-materials.json": "b17d4aa727d5edcf16b8b756cf36fdaad3ee9f55c521cf762db58f4c6ae98c3d",
     "site/zh/index.html": "2cfbb6944e394ac49140365619976a40ada7e7832f98dbf5e63bfaceea3636be",
+    "source.archive": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0",
     "versions/v2/.mathesis/generated.json": "ceba8f71fa771adc7a877ad2c432fc6a572f03d7fac3ee67d5dbf6270fcdead0",
     "versions/v2/CHANGELOG.md": "04448bfdd62eb7c941426203a3a73f8e7b8589814b7e249ea364d995859f09ef",
     "versions/v2/CITATION.cff": "d7d2e5f6237a47dca8efe2d2a1c600452d273ca6d1f1ec2b079bd15a8e2706aa",
@@ -68,7 +71,8 @@
     "versions/v2/manuscript/okada-conjectures-20261103/note.tex": "44ede499d2c78f9b82dc1738bc3fc2202e205fc87424c0e4fda2692f096486f7",
     "versions/v2/manuscript/okada-conjectures-20261103/verify.py": "ab0e1bffc3b34bc8ba29738e500471fe9253e6d24d1686e51c2dddfbb93c44af",
     "versions/v2/paper.json": "20d60a104fdfb07054ec58a31e0d30d9a71eb3447cc39ab2d6d79d11251d8da2",
-    "versions/v2/paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e"
+    "versions/v2/paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e",
+    "versions/v2/source.archive": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0"
   },
   "version": 2,
   "work": "okada-2020-premerged-determinant-nonpalindromic"
