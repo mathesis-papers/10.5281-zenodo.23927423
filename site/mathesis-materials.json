@@ -2,12 +2,12 @@
   "schema": "mathesis.materials.v1",
   "work": "okada-2020-premerged-determinant-nonpalindromic",
   "version": 2,
-  "repository_url": "https://github.com/mathesis-papers/6aec38590da450359338390d",
-  "site_url": "https://papers.trureturing.org/6aec38590da450359338390d/",
+  "repository_url": "https://github.com/mathesis-papers/10.5281-zenodo.23927423",
+  "site_url": "https://papers.trureturing.org/10.5281-zenodo.23927423/",
   "doi": "10.5281/zenodo.23927424",
   "reading": {
-    "en": "https://papers.trureturing.org/6aec38590da450359338390d/en/",
-    "zh": "https://papers.trureturing.org/6aec38590da450359338390d/zh/"
+    "en": "https://papers.trureturing.org/10.5281-zenodo.23927423/en/",
+    "zh": "https://papers.trureturing.org/10.5281-zenodo.23927423/zh/"
   },
   "slides": [],
   "visualizations": []
