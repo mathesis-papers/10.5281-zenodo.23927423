@@ -2,16 +2,16 @@
   "files": {
     "pdf": {
       "bytes": 90098,
-      "matches_public": null,
+      "matches_public": true,
       "path": "paper.pdf",
-      "public_sha256": null,
+      "public_sha256": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e",
       "sha256": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e"
     },
     "source": {
       "bytes": 16755,
-      "matches_public": null,
+      "matches_public": true,
       "path": "source.archive",
-      "public_sha256": null,
+      "public_sha256": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0",
       "sha256": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0"
     }
   },
@@ -38,6 +38,8 @@
     "license": "CC-BY-4.0",
     "msc": [],
     "pdf": {
+      "bytes": 90098,
+      "sha256": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e",
       "url": "/api/v1/collected-papers/okada-2020-premerged-determinant-nonpalindromic/files/pdf?version=2"
     },
     "previous_version": null,
@@ -46,6 +48,8 @@
     "record": "okada-2020-premerged-determinant-nonpalindromic",
     "repository_name": "10.5281-zenodo.23927423",
     "source": {
+      "bytes": 16755,
+      "sha256": "da99d1f3682c59285a8d9f3e47f664b8a5f844ae5c45da303328e3fef6f4ffa0",
       "url": "/api/v1/collected-papers/okada-2020-premerged-determinant-nonpalindromic/files/source?version=2"
     },
     "title": "Proofs of Okada's Conjectures 9.63 and 9.64 with constant-base-shift extensions (arXiv:2003.02112v2, Section 9.8.3)",

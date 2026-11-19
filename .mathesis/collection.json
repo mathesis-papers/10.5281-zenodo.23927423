@@ -1,7 +1,7 @@
 {
   "git_blobs": {
     ".github/workflows/pages.yml": "7879724db1358178aad7e9bed326a44be44f5a6a",
-    ".mathesis/generated.json": "432eb070265d65e8e0e3bc323a35af103a1498a9",
+    ".mathesis/generated.json": "990fbf1931c5bcc3be774b242907a7331da3fb6d",
     "CHANGELOG.md": "83d850e8aa9f0e1b398ddbd0944c3e2427efb4be",
     "CITATION.cff": "0531626b07057006801d12db36b960c20861a84a",
     "CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -13,7 +13,7 @@
     "manuscript/okada-conjectures-20261103/metadata.json": "068cadcabfd21d43bdd19d2836978f2c27a55ad6",
     "manuscript/okada-conjectures-20261103/note.tex": "409e0ec78143ba9d2f0d0059626206914403835e",
     "manuscript/okada-conjectures-20261103/verify.py": "32961aa668f1d9a85a0f161cd365ca77f2304dad",
-    "paper.json": "23e9694a0dc7b8ffa70e7f2151c5c408c0190928",
+    "paper.json": "651f029d7b73ba2ab02047fea3b2b878cd69b995",
     "paper.pdf": "547f5844baaa3b1bc7a01cc399045261fa2a9fa7",
     "site/en/index.html": "0ca30e57827fe4ee6935a736203177fe49fd144f",
     "site/index.html": "96aaf35750149f8cf1ccdb2fb891852c9d1b728c",
@@ -39,7 +39,7 @@
   "schema": "mathesis.paper-collection.v1",
   "sha256": {
     ".github/workflows/pages.yml": "f15d983dcb8f324ffdedb50b05f7380e11fda8723d49b5c8f10ef0f414612372",
-    ".mathesis/generated.json": "bcc4bf995753a9d3bc8d6bc74983bed103f2b818ad65be9b3a187a579f738fd9",
+    ".mathesis/generated.json": "0955270d734621aa80e1a9204c25f1e8ae2e55e455fb99401fcb645c6cc675f5",
     "CHANGELOG.md": "04448bfdd62eb7c941426203a3a73f8e7b8589814b7e249ea364d995859f09ef",
     "CITATION.cff": "d7d2e5f6237a47dca8efe2d2a1c600452d273ca6d1f1ec2b079bd15a8e2706aa",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
@@ -51,7 +51,7 @@
     "manuscript/okada-conjectures-20261103/metadata.json": "9a2641aabd1b57f1c86585cf6d43fe3d98642ea6510a615ba2b62598d3dd795f",
     "manuscript/okada-conjectures-20261103/note.tex": "44ede499d2c78f9b82dc1738bc3fc2202e205fc87424c0e4fda2692f096486f7",
     "manuscript/okada-conjectures-20261103/verify.py": "ab0e1bffc3b34bc8ba29738e500471fe9253e6d24d1686e51c2dddfbb93c44af",
-    "paper.json": "750600ac47719b332e8be56d2be7144e4602bd85b6130e20b2377e7726d3388d",
+    "paper.json": "018309e39367355805a5f2b02ab45fdc0207df9d2f49a28896fe42da8e799ba0",
     "paper.pdf": "bee9c2388a14ba0ccfefe584385b3800a103614186e94567a2ffd8111443069e",
     "site/en/index.html": "6074089b1e60bbe770cd2abf048857df7cb222ec0c1fcae6fb7fb30e6f805b18",
     "site/index.html": "a43e953a6151929e2cff93731fd760a0278e37360a84ffb8bd22b0c7de29ae6d",
